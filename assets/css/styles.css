@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #e4f9ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*NAVBAR*/
+.nav-container{
+    position: fixed;
+    top: 3%;
+    right: 3%;
+}
+.nav, .nav-item{
+    border-radius: 50%;
+    background-color: #fa1616;
+    text-align: center;
+    color: #e4f9ff;
+}
+.nav{  
+    width: 4em;
+    height: 4em;
+}
+.nav:hover{
+    cursor: pointer;
+}
+.menu-text h1{
+    padding: 1.2em 0%;
+    font-size: 1rem;
+}
+.menu-close{
+    display: none;
+}
+.nav-item
+{
+    position: absolute;
+    height: 3em;
+    width: 3em;
+    right: 7em;
+    color: #e4f9ff;
+    transform-origin: 6em 1em;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #e4f9ff;
+}
+.fa{
+    position: absolute;
+    
+}
+.nav-item:nth-child(1){
+    transform: rotate(30deg);
+}
+
+.fa-home{
+    transform: rotate(-30deg);
+    padding: 1rem;
+}
+.nav-item:nth-child(2){
+    transform: rotate(-20deg);
+}
+.fa-cogs{
+    transform: rotate(20deg);
+    padding: 1rem;
+}
+.nav-item:nth-child(3){
+    transform: rotate(-70deg);
+}
+.fa-archive{
+    transform: rotate(70deg);
+    padding: 1rem;
+}
+.nav-item:nth-child(4){
+    transform: rotate(-120deg);
+}
+.fa-envelope{
+    transform: rotate(120deg);
+    padding: 1rem;
+}
+
+/*IMAGE CIRCLE*/
+
+.image-circle{
+    text-align: center;
+    margin-top: 8em;
+}
+.image-circle img{
+    border-radius: 50%;
+    width: 15em;
+    height: 15em;
+    animation: 3s forwards img-animation;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.image-circle .border {
+    /* content: ''; */
+    justify-content: center;
+    position: absolute;
+    top: 7.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15em;
+    height: 15em;
+    background: transparent;
+    border-radius: 50%;
+    border: 0.5em dashed #fa1616;
+    -webkit-animation-name: Rotate;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: Rotate;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: Rotate;
+    -ms-animation-duration: 2s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+  }
+
+@keyframes img-animation{
+    0%{
+      transform: scale(0.5);
+    }
+  
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+h1{
+    
+}
