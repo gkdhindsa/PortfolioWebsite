@@ -5,40 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">    <link rel="stylesheet" href="assets/css/styles.css">
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <!--Google Fonts Link-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!--CSS Link-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+
+
 </head>
 
 <body>
     <!--Navbar-->
     <div class="nav-container">
         <div class="nav" id="menu">
-            <div class="menu-text">
-                <h1>
+            <div class="menu-text text-center">
+                <h1 class="text-center">
                     Menu
                 </h1>
             </div>
         </div>
         <div id="menu-items" class="nav-items menu-close">
             <div class="nav-item">
-                <a href="">
+                <a href="#home">
                     <i class="fa fa-home"></i>
                 </a>
             </div>
             <div class="nav-item">
-                <a href="">
+                <a href="#skills">
                     <i class="fas fa-cogs"></i>
                 </a>
             </div>
             <div class="nav-item">
-                <a href="">
+                <a href="#projects">
                     <i class="fa fa-archive"></i>
                 </a>
             </div>
             <div class="nav-item">
-                <a href="">
+                <a href="#contact">
                     <i class="fa fa-envelope"></i>
                 </a>
             </div>
@@ -46,14 +56,67 @@
     </div>
 
     <section id="home">
-        <div class="image-circle">
-            <div class="border"></div>
-            <img src="assets/img/gkd.png" class="img-fluid">
-            <h1>Gurnehmat Kaur Dhindsa</h1>
-            <p>Front-End Developer</p>
-        </div>   
+        <div class="container">
+            <div class="image-circle">
+                <div class="Border"></div>
+                <img src="assets/img/gkd.png" class="img-fluid">
+                <h1 class="mt-5">Gurnehmat Kaur Dhindsa</h1>
+                <p>Front-End Developer</p>
+            </div>
+            <div class="page-1">
+                <div class="down-arrow">
+                    <a href="#skills"><i class="fas fa-chevron-down"></i></a>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section id="skills">
+        <div class="container">
+            <h3>My skills.</h3>
+            <div class="skills-icons pt-5">
+                <div class="row">
+                    <div class="skill-icon col-sm-4 col-12 text-center">
+                        <img src="https://img.icons8.com/color/480/000000/html-5.png"/>
+                    </div>
+                    <div class="skill-icon col-sm-4 col-12 text-center">
+                        <img src="https://img.icons8.com/color/480/000000/css3.png"/>
+                    </div>
+                    <div class="skill-icon col-sm-4 col-12 text-center">
+                        <img src="https://img.icons8.com/color/480/000000/bootstrap.png"/>
+                    </div>    
+                </div>
+                <div class="row">
+                    <div class="skill-icon col-sm-6 col-12 text-center">
+                        <img src="https://img.icons8.com/color/480/000000/javascript.png"/>
+                    </div>
+                    <div class="skill-icon col-sm-6 col-12 text-center">
+                        <img src="https://img.icons8.com/windows/256/000000/github.png"/>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="container">
+
+        </div>
+    </section>
+    <section id="contact">
+        <h3>Contact me</h3>
+        <div class="container">
+
+        </div>
     </section>
     <script src="assets/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </body>
 
 </html>
