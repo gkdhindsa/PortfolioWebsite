@@ -8,4 +8,4 @@ menuButton.addEventListener('click',function(){
     else{
         menuItems.classList.add('menu-close');
     }
-})
+});

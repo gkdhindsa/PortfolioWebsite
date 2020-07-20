@@ -4,8 +4,12 @@ body{
     background-color: #e4f9ff;
     font-family: 'Montserrat', sans-serif;
 }
-h1, h3{
-    font-weight: 900;
+h1{
+    font-weight: 400;
+    font-size: 2.3em;
+}
+p{
+    font-weight:300 ;
 }
 /*NAVBAR*/
 .nav-container{
@@ -22,11 +26,16 @@ h1, h3{
     width: 4em;
     height: 4em;
 }
-.nav:hover, .nav-item:hover{
+.nav:hover, .nav-item:hover, .red-btn:hover{
     cursor: pointer;
-    transform: scale(1.3);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+}
+.red-btn:hover{
+    transform: scale(1.1);
+}
+.nav:hover, .nav-item:hover
+{
+    transform: scale(1.3);
 }
 .menu-text h1{
     padding: 1.2em 0.5em;
@@ -83,6 +92,17 @@ h1, h3{
 }
 
 /*IMAGE CIRCLE*/
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-circle{
+    display: flex;
+    justify-content: center;
+}
 
 .image-circle img{
     border-radius: 50%;
@@ -90,15 +110,13 @@ h1, h3{
     height: 15em;
     animation: 3s forwards img-animation;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    margin-top: 1em;
 
 }
-.image-circle .Border {
+.image-circle .border {
     /* content: ''; */
     justify-content: center;
-    position: absolute;
-    top: 7.5em;
-    left: 50%;
-    transform: translateX(-50%);
     width: 16em;
     height: 16em;
     background: transparent;
@@ -127,17 +145,17 @@ h1, h3{
 
 }
 
-#skills, #projects, #contact{
-    padding: 4em 0em;
+#skills, #projects, #contact, #home{
     text-align: center;
+    height: 90vh;
+    padding: 5vh 0vh;
 }
-#home{
-    text-align: center;
-    padding-top: 8em;
+.navigator-outer{
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
 }
-
-.page-1{
-    display: inline-block;
+.navigator-inner{
     text-align: center;
     border-radius: 50%;
     width: 3em;
@@ -145,15 +163,16 @@ h1, h3{
     background-color: #12cad6;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #e4f9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.page-1:hover{
+
+.navigator-inner:hover{
     background-color: #0fabbc;
     
 }
-.down-arrow{
-    padding: 1em;
-}
-.down-arrow a{
+.navigator-inner a{
     color: #e4f9ff;
 }
 
@@ -166,4 +185,21 @@ h1, h3{
     width: 10em;
     height: auto;
     max-width: 90%;
+}
+.skill-row{
+    display: flex;
+    justify-content: space-evenly;
+}
+.skill-icons{
+    padding-top: 5vh;
+}
+.red-btn{
+    font-family: 'Montserrat';
+    background-color: #fa1616;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 400;
+    padding: 0.5em 1em;
+    color: white;
+    outline: none;
 }
