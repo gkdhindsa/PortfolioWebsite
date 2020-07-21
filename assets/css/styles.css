@@ -16,11 +16,13 @@ p{
     position: fixed;
     top: 3%;
     right: 3%;
+    z-index: 99;
 }
 .nav, .nav-item{
     border-radius: 50%;
     background-color: #fa1616;
     color: #e4f9ff;
+   
 }
 .nav{  
     width: 4em;
@@ -102,6 +104,8 @@ p{
 .image-circle{
     display: flex;
     justify-content: center;
+    z-index: 6;
+    position: relative;
 }
 
 .image-circle img{
@@ -147,8 +151,11 @@ p{
 
 #skills, #projects, #contact, #home{
     text-align: center;
-    height: 90vh;
+   
     padding: 5vh 0vh;
+}
+#home, #skills{
+    height: 90vh;
 }
 .navigator-outer{
     display: flex;
@@ -190,9 +197,6 @@ p{
     display: flex;
     justify-content: space-evenly;
 }
-.skill-icons{
-    padding-top: 5vh;
-}
 .red-btn{
     font-family: 'Montserrat';
     background-color: #fa1616;
@@ -202,4 +206,23 @@ p{
     padding: 0.5em 1em;
     color: white;
     outline: none;
+}
+/*Project Photos*/
+.project-photos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.project-photos-column{
+
+}
+
+.project-photos img{
+    
+ max-width: 80%;
+ height: auto;
+ margin-top: 1em;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
