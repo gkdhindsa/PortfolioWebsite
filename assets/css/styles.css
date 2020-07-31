@@ -1,17 +1,24 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #e4f9ff;
+    background-color: #0B0C10;
     font-family: 'Montserrat', sans-serif;
 }
 
 h1 {
     font-weight: 400;
     font-size: 2.3em;
+    color: #66FCF1 ;
+    
+}
+h3{
+    color: white;
+    font-weight: 500;
 }
 
 p {
     font-weight: 300;
+    color: whitesmoke;
 }
 
 /*NAVBAR*/
@@ -21,13 +28,16 @@ p {
     right: 3%;
     z-index: 99;
 }
-
+/*fa1616*/
 .nav,
 .nav-item {
     border-radius: 50%;
-    background-color: #fa1616;
-    color: #e4f9ff;
+    background-color: #66FCF1;
+    color: #1f2833;
+}
 
+.nav:active{
+    background-color: #1f2833;
 }
 
 .nav {
@@ -54,6 +64,8 @@ p {
 .menu-text h1 {
     padding: 1.2em 0.5em;
     font-size: 1em;
+    color: #0B0C10;
+    font-weight: 900;
 }
 
 .menu-close {
@@ -65,13 +77,13 @@ p {
     height: 3em;
     width: 3em;
     right: 7em;
-    color: #e4f9ff;
+    color: #;
     transform-origin: 6em 1em;
 }
 
 .nav-item a {
     text-decoration: none;
-    color: #e4f9ff;
+    color: #0B0C10;
 }
 
 .fa {
@@ -148,7 +160,7 @@ p {
     height: 16em;
     background: transparent;
     border-radius: 50%;
-    border: 0.5em dashed #fa1616;
+    border: 0.5em dashed #66fcf1;
     animation: 1s 3s forwards appear;
     opacity: 0%;
 }
@@ -199,7 +211,7 @@ p {
     border-radius: 50%;
     width: 3em;
     height: 3em;
-    background-color: #12cad6;
+    background-color: #1f2833;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #e4f9ff;
     display: flex;
@@ -208,14 +220,17 @@ p {
 
 }
 
-.navigator-inner:hover {
-    background-color: #fa1616;
-
-}
-
 .navigator-inner a {
     color: #e4f9ff;
 }
+.navigator-inner:hover  {
+    background-color: #66fcf1;
+   
+}
+.navigator-inner:hover a{
+    color: #0B0C10;
+}
+
 
 .image-circle h1 {
     font-size: 2em;
@@ -228,7 +243,7 @@ p {
 }
 
 .skill-container {
-    background-color: #12cad6;
+    background-color: #1f2833;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 90%;
     border-radius: 1em;
@@ -241,11 +256,11 @@ p {
 
 .skill-container .navigator-outer .navigator-inner {
     background-color: #e4f9ff;
-    color: #12cad6;
+    color: #66fcf1;
 }
 
 .skill-container .navigator-outer .navigator-inner:hover {
-    background-color: #fa1616;
+    background-color: #66fcf1;
     color: #e4f9ff;
 }
 
@@ -262,13 +277,14 @@ p {
 
 .red-btn {
     font-family: 'Montserrat';
-    background-color: #fa1616;
+    background-color: #66fcf1;
     border: none;
     font-size: 1.1em;
     font-weight: 400;
     padding: 0.5em 1em;
-    color: white;
+    color: #0B0C10;
     outline: none;
+    font-weight: 900;
 }
 
 /*Project Photos*/
@@ -326,6 +342,7 @@ p {
 .project-photo h3 {
     padding: 1em 0 0 0;
     margin: 0;
+    
 }
 
 /*contact*/
@@ -346,7 +363,7 @@ p {
     width: 90%;
     margin-bottom: 1em;
     padding: 0.5em 1em;
-    background-color: #e4f9ff;
+    
     outline: none;
     border: none;
     border-radius: 2pt;
@@ -356,7 +373,7 @@ p {
 
 .contact-card-sm,
 .contact-card-form {
-    background-color: #12cad6;
+    background-color: #1f2833;
     border-radius: 0.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1em;
@@ -377,5 +394,9 @@ p {
 }
 
 .sm-icon{
-    color: #fa1616;
+    color: #66fcf1;
+}
+.footer {
+    min-height: 5rem;
+    background-color: #66FCF1;
 }
