@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 
     <!--Font Awesome-->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
+    <!--Glide-->
+    <link rel="stylesheet" href="./assets/css/glide.core.css">
+    <link rel="stylesheet" href="./assets/css/glide.theme.css">
 
     <!--Google Fonts Link-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
@@ -57,73 +62,480 @@
         </div>
     </div>
 
-    <section id="home">
+    <section id="home" class="">
         <div class="container-home">
             <div class="image-circle">
-                <div class="border"></div>
+                <div id="border"></div>
                 <img src="assets/img/gkd.png" class="my-image">
             </div>
             <div class="home-text">
                 <h1>Hi, I'm Gurnehmat</h1>
-                <p>a front-end developer</p>
+                <p>I like making websites that look good. </p>
             </div>
-            <div class="navigator-outer">
+            <!--<div class="navigator-outer">
                 <div class="navigator-inner">
                     <a href="#skills"><i class="fas fa-chevron-down"></i></a>
                 </div>
             </div>
-
+        -->
         </div>
+       
     </section>
-    <section id="skills">
-        <div class="skill-container">
-            <h1>Skills</h1>
-            <div class="skill-icons">
-                <div class="skill-row">
-                    <div class="skill-icon ">
-                        <img src="https://img.icons8.com/color/480/000000/html-5.png" />
-                    </div>
-                    <div class="skill-icon">
-                        <img src="https://img.icons8.com/color/480/000000/css3.png" />
-                    </div>
-                    <div class="skill-icon">
-                        <img src="https://img.icons8.com/color/480/000000/bootstrap.png" />
-                    </div>
-                </div>
-                <div class="skill-row">
-                    <div class="skill-icon ">
-                        <img src="https://img.icons8.com/color/480/000000/javascript.png" />
-                    </div>
-                    <div class="skill-icon ">
+    <section id="skills" class="hide">
+        <h1 class="">Tech Stack</h1>
+        <div class="glide mt-5 ">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <img src="https://img.icons8.com/color/480/000000/html-5.png" class="img-fluid" />
+
+                    </li>
+                    <li class="glide__slide">
+                        <img src="https://img.icons8.com/color/480/000000/css3.png" class="img-fluid" />
+
+                    </li>
+                    <li class="glide__slide">
+                        <img src="https://img.icons8.com/color/480/000000/bootstrap.png" class="img-fluid" />
+
+                    </li>
+                    <li class="glide__slide">
+                        <img src="https://img.icons8.com/color/480/000000/javascript.png" class="img-fluid" />
+
+                    </li>
+                    <li class="glide__slide">
                         <img src="https://img.icons8.com/windows/256/000000/github.png" />
-                    </div>
+
+                    </li>
+
+                    <li class="glide__slide">
+                        <img src="https://img.icons8.com/ios-filled/250/000000/jquery.png" /> </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                        class="fa fa-chevron-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                        class="fa fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+    </section>
+    <section id="projects" class="hide">
+        <h1 class="mb-5">Projects</h1>
+        <div class="projects-container  ">
+            <div class="p-img">
+                <img src="assets/img/Calculator.png" alt="Calculator">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    <a href="https://gallant-brown-f0cbd9.netlify.app/">
+                        <button class="red-btn ">Click me!</button>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="p-img">
+                <img src="assets/img/photo-gallery.png" alt="Photo Gallery Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    <a href="https://hopeful-rosalind-b2d3de.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="p-img">
+                <img src="assets/img/real-estate-website.png" alt="Real Estate Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    <a href="https://boring-pasteur-c1594e.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="p-img">
+                <img src="assets/img/restaurant website.png" alt="Restaurant Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                   
+                    <a href=" https://silly-ramanujan-1a992a.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="p-img">
+                <img src="assets/img/space-science-website.png" alt="Space Science Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    
+                    <a href="https://frosty-montalcini-f04cd9.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
                 </div>
             </div>
-            <button class="red-btn">
-                <a href="assets/doc/Gurnehmat Kaur Dhindsa.pdf"></a>
-                View resume
-            </button>
-            <div class="navigator-outer">
-                <a href="#projects">
-                    <div class="navigator-inner">
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </a>
+            <div class="p-img">
+                <img src="assets/img/survey-form.png" alt=" Survery Form">
+                <div class="img-overlay">
+                    
+                    <h4>Rando text</h4>
+                    <a href="https://brave-tereshkova-e4f083.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/brow.png" alt="Brow Bar Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                   
+                    <a href=" https://quirky-knuth-ca671e.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/tic-tac-toe.png" alt=" Tic Tac Toe">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    
+                    <a href=" https://peaceful-morse-790de0.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="p-img">
+                <img src="assets/img/technical documentation page.png" alt=" Random Text">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    <a href=" https://romantic-colden-342515.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                   
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/tribute-page.png" alt="Tribute Page">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                   
+                    <a href=" https://romantic-galileo-8e387b.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="p-img">
+                <img src="assets/img/tip-calculator.png" alt="Tip Calculator">
+                <div class="img-overlay">
+                    
+                    <h4>Rando text</h4>
+                    <a href="https://happy-keller-e0a8f7.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/virtual-keyboard.png" alt="Virtual Keyboard">
+                <div class="img-overlay">
+                    
+                    
+                    <h4>Rando text</h4>
+                    <a href="https://admiring-meitner-4d50f1.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/grade-calculator.png" alt="Grade Calculator">
+                <div class="img-overlay">
+                   
+
+                    <h4>Rando text</h4>
+                    <a href=" https://admiring-elion-1aad6b.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/javascript clock.png" alt="JavaScript Clock">
+                <div class="img-overlay">
+                   
+
+                    <h4>Rando text</h4>
+                    <a href="https://inspiring-nightingale-8f94f2.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="p-img">
+                <img src="assets/img/snake.JPG" alt="Snake Game">
+                <div class="img-overlay">
+                   
+
+                    <h4>Rando text</h4>
+                    <a href="https://naughty-bhabha-54e57d.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="projects-container-2 hide">
+            <div class="p-img">
+                <img src="assets/img/Calculator.png" alt="Calculator">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    <a href="https://gallant-brown-f0cbd9.netlify.app/">
+                        <button class="red-btn ">Click me!</button>
+                    </a>
+                </div>
+                
+            </div>
+
+            <div class="p-img">
+                <img src="assets/img/photo-gallery.png" alt="Photo Gallery Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    <a href="https://hopeful-rosalind-b2d3de.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="p-img">
+                <img src="assets/img/real-estate-website.png" alt="Real Estate Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    <a href="https://boring-pasteur-c1594e.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="p-img">
+                <img src="assets/img/restaurant website.png" alt="Restaurant Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                   
+                    <a href=" https://silly-ramanujan-1a992a.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="p-img">
+                <img src="assets/img/space-science-website.png" alt="Space Science Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    
+                    <a href="https://frosty-montalcini-f04cd9.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/survey-form.png" alt=" Survery Form">
+                <div class="img-overlay">
+                    
+                    <h4>Rando text</h4>
+                    <a href="https://brave-tereshkova-e4f083.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/brow.png" alt="Brow Bar Website">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                   
+                    <a href=" https://quirky-knuth-ca671e.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/tic-tac-toe.png" alt=" Tic Tac Toe">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    
+                    <a href=" https://peaceful-morse-790de0.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+
+            </div>
+            <div class="p-img">
+                <img src="assets/img/technical documentation page.png" alt=" Random Text">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    <a href=" https://romantic-colden-342515.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                   
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/tribute-page.png" alt="Tribute Page">
+                <div class="img-overlay">
+                    <h4>Rando text</h4>
+                    
+                    <a href=" https://romantic-galileo-8e387b.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="p-img">
+                <img src="assets/img/tip-calculator.png" alt="Tip Calculator">
+                <div class="img-overlay">
+                    
+                    <h4>Rando text</h4>
+                    <a href="https://happy-keller-e0a8f7.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/virtual-keyboard.png" alt="Virtual Keyboard">
+                <div class="img-overlay">
+                    
+                    
+                    <h4>Rando text</h4>
+                    <a href="https://admiring-meitner-4d50f1.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/grade-calculator.png" alt="Grade Calculator">
+                <div class="img-overlay">
+                   
+
+                    <h4>Rando text</h4>
+                    <a href=" https://admiring-elion-1aad6b.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+            <div class="p-img">
+                <img src="assets/img/javascript clock.png" alt="JavaScript Clock">
+                <div class="img-overlay">
+                   
+
+                    <h4>Rando text</h4>
+                    <a href="https://inspiring-nightingale-8f94f2.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="p-img">
+                <img src="assets/img/snake.JPG" alt="Snake Game">
+                <div class="img-overlay">
+                   
+
+                    <h4>Rando text</h4>
+                    <a href="https://naughty-bhabha-54e57d.netlify.app/">
+                        <button class="red-btn " >Click me!</button>
+                    </a>
+                </div>
             </div>
 
 
         </div>
+        
     </section>
-    <section id="projects">
-        <div class="projects-container">
-            <h1>Projects</h1>
-            <div class="project-photos">
-                <div class="project-photo-col">
+    <section id="contact" class="hide">
+
+        <div class="contact-container">
+            <h1>Contact me</h1>
+            <div class="contact-card-outer row m-5">
+                <div class="contact-card-form col-12 col-md-5 mb-5 mb-md-0">
+                    <h3 class="my-3">Drop in a message here</h3>
+                    <form>
+                        <div>
+                            <input id="name" placeholder="What's your name?" type="text" required class="form-input">
+                        </div>
+                        <div>
+                            <input id="email" placeholder="Where can I drop you an email?" type="email" required
+                                class="form-input">
+
+                        </div>
+                        <div>
+                            <textarea id="message" placeholder="Type your message here" required class="form-input"
+                                rows=5></textarea>
+                        </div>
+                        <button type="submit" class="red-btn">Send!</button>
+                    </form>
+                </div>
+                <div class="contact-card-sm col-12 col-md-5">
+                    <div class="cc-sm-row">
+                        <div class="cc-sm-col">
+                            <a class="sm-icon" href="https://www.linkedin.com/in/gurnehmat-dhindsa-16714b190/">
+                                <i class="fab fa-linkedin fa-4x"></i>
+                            </a>
+
+                        </div>
+                        <div class="cc-sm-col">
+                            <h3>/gurnehmat-dhindsa-16714b190/<h3>
+                        </div>
+                    </div>
+                    <div class="cc-sm-row">
+                        <div class="cc-sm-col">
+                            <a class="sm-icon" href="https://twitter.com/gurnehmat">
+                                <i class="fab fa-twitter fa-4x"></i>
+                            </a>
+
+                        </div>
+                        <div class="cc-sm-col">
+                            <h3>@gurnehmat</h3>
+                        </div>
+                    </div>
+                    <div class="cc-sm-row">
+                        <div class="cc-sm-col">
+                            <a class="sm-icon" href="https://github.com/gkdhindsa">
+                                <i class="fab fa-github fa-4x"></i>
+                            </a>
+                        </div>
+                        <div class="cc-sm-col">
+                            <h3>/gkdhindsa</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section class="footer">
+       
+            <a href="https://github.com/gkdhindsa/portfoliowebsite">&lt;gurnehmat/&gt;</a>
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
+<!--<div class="project-photos ">
+                <div class="project-photo-col col-12 ">
                     <img src="assets/img/real-estate-website.png" alt="">
-                    <img src="assets/img/grade-calculator.png" alt="">
                     <img src="assets/img/Calculator.png" alt="">
                 </div>
-                <div class="project-photo-col">
+                <div class="project-photo-col col-12 ">
                     <img src="assets/img/space-science-website.png" alt="">
                     <img src="assets/img/virtual-keyboard.png" alt="">
                     <img src="assets/img/photo-gallery.png" alt="">
@@ -131,7 +543,7 @@
                     <img src="assets/img/restaurant website.png" alt="">
 
                 </div>
-                <div class="project-photo-col">
+                <div class="project-photo-col col-12 ">
                     <img src="assets/img/survey-form.png" alt="">
                     <img src="assets/img/tip-calculator.png" alt="">
                     <img src="assets/img/tribute-page.png" alt="">
@@ -139,85 +551,4 @@
 
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="contact">
-
-        <div class="contact-container">
-            <h1>Contact me</h1>
-            <div class="contact-card-outer">
-                <div class="contact-card-inner">
-                    <div class="contact-card-form">
-                        <h3>Drop in a message here</h3>
-                        <form>
-                            <div>
-                                <input id="name" placeholder="What's your name?" type="text" required
-                                    class="form-input">
-                            </div>
-                            <div>
-                                <input id="email" placeholder="Where can I drop you an email?" type="email" required
-                                    class="form-input">
-
-                            </div>
-                            <div>
-                                <textarea id="message" placeholder="Type your message here" required class="form-input"
-                                    rows=5></textarea>
-                            </div>
-                            <button type="submit" class="red-btn">Send!</button>
-
-                        </form>
-                    </div>
-                    <div class="contact-card-sm">
-                        <div class="cc-sm-row">
-                            <div class="cc-sm-col">
-                                <a class="sm-icon" href="https://www.linkedin.com/in/gurnehmat-dhindsa-16714b190/">
-                                    <i class="fab fa-linkedin fa-4x"></i>
-                                </a>
-        
-                            </div>
-                            <div class="cc-sm-col">
-                                <h3>/gurnehmat-dhindsa-16714b190/<h3>
-                            </div>
-                        </div>
-                        <div class="cc-sm-row">
-                            <div class="cc-sm-col">
-                                <a class="sm-icon" href="https://twitter.com/gurnehmat">
-                                    <i class="fab fa-twitter fa-4x"></i>
-                                </a>
-        
-                            </div>
-                            <div class="cc-sm-col">
-                                <h3>@gurnehmat</h3>
-                            </div>
-                        </div>
-                        <div class="cc-sm-row">
-                            <div class="cc-sm-col">
-                                <a class="sm-icon" href="https://github.com/gkdhindsa">
-                                    <i class="fab fa-github fa-4x"></i>
-                                </a>
-                            </div>
-                            <div class="cc-sm-col">
-                                <h3>/gkdhindsa</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section class="footer">
-        <div class="container"></div>
-    </section>
-    <script src="assets/js/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-</body>
-
-</html>
+-->
