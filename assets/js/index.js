@@ -34,6 +34,7 @@ menuButton.addEventListener('click',function(){
 let array=['home', 'skills', 'projects', 'contact']
 $.each($('.nav-item'), function(key, value){
   $(value).on('click', function(){
+    $('.nav').click()
     let sec= $(value).children('a').attr('href').slice(1,)
   
     $.each(array, function(k, v){
